@@ -1,6 +1,5 @@
 .logo-web{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;   
@@ -9,7 +8,6 @@
 }
 .logo-studio-header{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -18,19 +16,25 @@
 }
 .logo-studio-footer{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 
 :root{
 --primary-text-color:#757575;
---title-text-color:#757575
+--title-text-color:#212121;
+--primary-background-color:#2F303A;
+--secondary-background-color:#F5F4FA;
+--hover-focus-color:#2196F3;
+--secondary-text-color:#FFFFFF;
+
+
 }
 body{
+background-color: #FFFFFF;
 font-family: Roboto, sans-serif
 }
 .navigation {
@@ -50,31 +54,27 @@ color:#757575;}
 }
 .contacts-mail:hover,
 .contacts-mail:focus{
-color: #2196F3;
+color:var(--hover-focus-color);
 }
 .contacts-tel:hover,
 .contacts-tel:focus{
-color: #2196F3;
+color:var(--hover-focus-color);
 }
 .e-mail:hover,
 .e-mail:focus{
-color: #2196F3;
+color:var(--hover-focus-color);
 }
 .tel:hover,
 .tel:focus{
-color: #2196F3;
+color:var(--hover-focus-color);
 }
-h1,h2,h3{
-    font-family: 'Roboto';
-    font-style: normal;
+h1,h2,h3{   
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;  
 }
 p{  
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -96,75 +96,85 @@ ul{
         height: 600px;
         left: 0px;
         top: 80px;
-        background: #2F303A;
+        background: var(--primary-background-color);
 
 }
-.title-effective-solutions{
-    
-    font-family: 'Roboto';
-    font-style: normal;
+.title-effective-solutions{      
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;         
-    color: #FFFFFF;
+    color:var(--secondary-text-color);
     
 }
-.example,.section-title{
-        font-family: 'Roboto';
-        font-style: normal;
+.example,.section-title,{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         letter-spacing: 0.03em;
-        color: #212121;
+        color:var(--title-text-color)
 
+}
+.title {
+    color: var(--title-text-color)
 }
 .footer{    
     width: 1600px;
     height: 252px;
     left: 0px;
     top: 2094px;
-    background: #2F303A;
+    background: var(--primary-background-color);
 }
 .team{
     width: 1600px;
   
-    background: #F5F4FA;
+    background: var(--secondary-background-color);
     }
 .button-order-service{
-    color:white ;
+    color:var(--secondary-text-color) ;
     background-color: #2196F3;
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 216px;
+    height: 50px;
+    cursor: pointer;}
+.button-filter{
+    color:var(--title-text-color) ;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    width: 103px;
+    height: 38px;
+    cursor: pointer;
+}
+.button-filter:hover,
+.button-filter:focus
+{ background-color:#2196F3;
+  color:var(--secondary-text-color)  
 }
 .text{
     color:var(--primary-text-color);
 }
 .adress {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
     color: #FFFFFF;
+    
 }
 
 .e-mail{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);}
          
-.tel{ font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
+.tel{ 
       font-size: 14px;
+      font-style: normal;
       line-height: 1.71;
-      color:rgba(255, 255, 255, 0.6);
-     
+      color:rgba(255, 255, 255, 0.6);     
 }
 
